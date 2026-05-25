@@ -1,0 +1,622 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    padding-block: 10px 0px;
+    background-color:black ;
+    
+}
+nav{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items:center;
+position: fixed;
+height: 70px;
+top: 0;
+left:0px;
+z-index: 100;
+background: #ffffff;
+padding-left: 200px;
+padding-right: 200px;
+}
+#navbar{
+    
+}
+
+#logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding-top:;
+}
+#nav-link{
+    display: flex;
+    list-style: none;
+}
+#nav-link li{
+    margin-left: 15px;
+    font-size: 25px;
+
+}
+#nav-link a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: .3s;
+}
+#nav-link a:hover{
+    color: rgb(25, 52, 200);
+}
+
+#home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: ;
+    gap:250px;
+    align-items: center;
+    padding:100px;
+    flex-wrap: wrap;
+    background-color:white;
+}
+#hom1{
+    max-width:600px;
+    color: black;
+}
+#h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+#icons{
+    display: flex;
+    flex-direction:row;
+    max-width: 80px;
+    padding-left: 15px;
+    padding-top: 20px;
+    font-size: 25px;
+    gap: 10px;
+    
+}
+#icons a{
+    display: inline-block;
+    color: black;   
+    border-radius: 100%;
+    padding: 5px 5px;
+}
+#icons a:hover{
+    background-color: rgb(224, 226, 234);;
+}
+#img1{
+height: 357px;
+border: px solid black;
+border-radius: 100%;
+margin-right:px;
+box-shadow: 0 0 20px rgb(2, 29, 35);
+
+}
+#img1:hover{
+
+}
+#about-image{
+
+
+     
+}
+#about-image:hover{
+    box-shadow: none;
+}
+
+
+#butt{
+    margin-top: 25px;
+    padding: 12px 30px;
+    border:2px;
+    border-radius: 40px;
+    font-size: 20px ;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 5px rgb(2, 29, 35);
+
+
+    }
+    #butt:active{
+        background-color:  rgb(49, 91, 216);
+        
+    }
+#about{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-betwee;
+    align-items: ;
+    padding: 0px;
+    flex-wrap: ;
+    background-color:white;
+}
+#about-content{
+    max-width: 600px;
+    color: black;
+}
+#about h1{
+    display: ;
+    text-align: center;
+    margin-top: 70px;
+    color:black;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    padding:100px;
+}
+#datails{
+    display: flex;
+    justify-content: space-between;
+}
+#skills{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: ;
+    padding: 0px;
+    flex-wrap: ;
+    background-color:white;
+}
+#skill-h1{
+    text-align: center;
+    margin-top: 70px;
+    color:black
+
+}
+#skill-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+}
+#tech{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    flex-wrap: wrap;
+    border:;
+    height: 400px;
+    width: 700px;
+    margin-left: 0px;
+    margin-bottom:130px;
+    gap:px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(2, 29, 35);
+
+}
+#heading{
+    text-align: center;
+    padding: 30px;
+}
+#skillimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+#html{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#html img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#html h4{
+    text-align: center;
+}
+#css{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+
+}
+#css img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#css h4{
+    text-align: center;
+}
+#javascript{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;  
+    border-radius: 20px;
+
+}
+#javascript img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#javascript h4{
+    text-align: center;
+}
+#python{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#python img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#python h4{
+    text-align: center;
+}
+#skillimg div:hover{
+    box-shadow: 0 0 20px rgb(2, 29, 35);
+}
+#skillimg div:active{
+    box-shadow: 0 0 20px rgb(2, 29, 35);c
+    background-color:rgb(84, 122, 236);
+}
+
+#soft{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    flex-wrap: wrap;
+    border: ;
+    height: 400px;
+    width: 700px;
+    margin-left: 0px;
+    margin-bottom:100px;
+    gap:0px;
+    box-shadow: 0 0 10px rgb(2, 29, 35);
+    border-radius: 20px;
+
+}
+#heading{
+    text-align: center;
+    padding: 30px;
+}
+#skillimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+#problem{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#problem img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#problem h4{
+    text-align: center;
+}
+#team{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#team img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#team h4{
+    text-align: center;
+}
+#clean{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;  
+    border-radius: 20px;
+
+}
+#clean img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#clean h4{
+    text-align: center;
+}
+#communication{
+    height: 130px;
+    width: 180px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+#communication img{
+    margin-left: 37px;
+    padding: 10px;
+}
+#communication h4{
+    text-align: center;
+}
+
+#project{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-betwee;
+    align-items: ;
+    padding: 0px;
+    flex-wrap: ;
+    background-color:white;
+}
+#project-h1{
+    text-align: center;
+    margin-top: 70px;
+    color: black;
+}
+#project-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: ;
+    margin-top: 50px;
+    gap: 100px;
+    
+}
+#project-main img{
+border: 1px solid black;
+border-radius: 30px;
+box-shadow: 0 0 15px rgb(2, 29, 35);
+
+
+}
+#contact{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-betwee;
+    align-items: ;
+    padding:px;
+    flex-wrap: ;
+    background-color:white;
+}
+#contact-h1{
+    display: ;
+    text-align: center;
+    margin-top: 70px;
+    color:black;
+    padding: 10px;
+}
+#connect-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:px;
+}
+#about-connect{
+    max-width: 800px;
+    color: black;
+    text-align:;
+    font-size: 18px;
+    margin-left: 450px;
+    margin-bottom:px;
+    margin-top: 15px;
+}
+#connect-form{
+    display: block;
+    font-size: ;
+    max-width: 400px;
+    max-height: 700px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-left: 550px;
+    margin-top: 40px;
+    margin-bottom:50px;
+    align-items:;
+    text-align: ;
+    line-height: 1.7;
+    box-shadow: 0 0 20px rgb(2, 29, 35);
+}
+#connect-form input{
+    width:350px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0.1px solid rgb(0, 0, 0) ;
+    
+}
+#connect-form input:hover{
+    box-shadow: 0 0 20px rgb(2, 29, 35);
+}
+#connect-form button{
+    background-color: white;
+    border: 0.1px solid rgb(49, 91, 216);
+    background-color:rgb(69, 105, 211) ;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 30px;
+    width: 150px;
+        
+}
+#connect-form button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(2, 29, 35);
+}
+
+
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media screen and (max-width: 1024px){
+
+    nav{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #home{
+        gap: 100px;
+        padding: 50px;
+    }
+
+    #main{
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    #skill-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-connect{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #connect-form{
+        margin-left: 0;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #nav-link{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    #nav-link li{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    #home{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+        padding: 120px 20px 50px;
+    }
+
+    #img1 img{
+        width: 250px;
+    }
+
+    #main{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    #about-image img{
+        width: 250px;
+        height: auto;
+    }
+
+    #datails{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #skill-main{
+        flex-direction: column;
+        align-items: ;
+    }
+
+    #tech,
+    #soft{
+        width: 90%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    #skillimg{
+        gap: 20px;
+    }
+
+    #html,
+    #css,
+    #javascript,
+    #python,
+    #problem,
+    #team,
+    #clean,
+    #communication{
+        width: 140px;
+    }
+
+    #project-main{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #project-main img{
+        width: 90%;
+        height: auto;
+    }
+
+    #about-connect{
+        margin-left: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #connect-form{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #connect-form input{
+        width: 100%;
+    }
+
+    #connect-form button{
+        margin-left: 0 !important;
+        width: 100%;
+        height: 40px;
+    }
+
+    #h1{
+        font-size: 22px;
+    }
+
+    #logo{
+        font-size: 24px;
+    }
+}
