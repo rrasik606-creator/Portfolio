@@ -158,233 +158,156 @@ box-shadow: 0 0 20px rgb(2, 29, 35);
     display: flex;
     justify-content: space-between;
 }
-#skills{
+
+/* ===== SKILLS SECTION ===== */
+
+#skills {
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: ;
-    padding: 0px;
-    flex-wrap: ;
-    background-color:white;
+    align-items: center;
+    padding-bottom: 80px;
+    background-color: white;
 }
-#skill-h1{
+
+#skill-h1 {
     text-align: center;
     margin-top: 70px;
-    color:black
-
+    margin-bottom: 40px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
 }
-#skill-main{
+
+#skill-main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     gap: 50px;
-
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 40px;
 }
-#tech{
+
+/* Both cards — use classes in HTML instead of duplicate IDs */
+#tech,
+#soft {
     display: flex;
     flex-direction: column;
-    justify-content: ;
-    flex-wrap: wrap;
-    border:;
-    height: 400px;
-    width: 700px;
-    margin-left: 0px;
-    margin-bottom:130px;
-    gap:px;
+    align-items: center;
+    width: 500px;
+    height: auto;               /* was fixed 400px — caused overflow */
+    padding-bottom: 30px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(2, 29, 35);
+}
 
-}
-#heading{
+/* Fix: target heading inside each card */
+#tech h3,
+#soft h3 {
     text-align: center;
-    padding: 30px;
+    padding: 25px 30px 15px;
+    font-size: 20px;
 }
-#skillimg{
+
+/* Fix: target skillimg inside each card */
+#tech .skillimg,
+#soft .skillimg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
+    padding: 10px 20px;
 }
-#html{
+
+/* Individual skill cards */
+#tech .skillimg div,
+#soft .skillimg div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* properly centers image instead of margin-left hack */
+    justify-content: center;
     height: 130px;
-    width: 180px;
+    width: 160px;
     border: 1px solid black;
     border-radius: 20px;
-}
-#html img{
-    margin-left: 37px;
     padding: 10px;
+    transition: box-shadow 0.3s;
 }
-#html h4{
-    text-align: center;
-}
-#css{
-    height: 130px;
-    width: 180px;
-    border: 1px solid black;
-    border-radius: 20px;
 
+#tech .skillimg div img,
+#soft .skillimg div img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0;                  /* remove the old margin-left: 37px */
+    padding: 0;
+}
 
-}
-#css img{
-    margin-left: 37px;
-    padding: 10px;
-}
-#css h4{
+#tech .skillimg div h4,
+#soft .skillimg div h4 {
     text-align: center;
+    margin-top: 8px;
+    font-size: 13px;
 }
-#javascript{
-    height: 130px;
-    width: 180px;
-    border: 1px solid black;  
-    border-radius: 20px;
 
-}
-#javascript img{
-    margin-left: 37px;
-    padding: 10px;                                      
-}
-#javascript h4{
-    text-align: center;
-}
-#python{
-    height: 130px;
-    width: 180px;
-    border: 1px solid black;
-    border-radius: 20px;
-
-}
-#python img{
-    margin-left: 37px;
-    padding: 10px;
-}
-#python h4{
-    text-align: center;
-}
-#skillimg div:hover{
+#tech .skillimg div:hover,
+#soft .skillimg div:hover {
     box-shadow: 0 0 20px rgb(2, 29, 35);
 }
-#skillimg div:active{
-    box-shadow: 0 0 20px rgb(2, 29, 35);c
-    background-color:rgb(84, 122, 236);
-}
 
-#soft{
-    display: flex;
-    flex-direction: column;
-    justify-content: ;
-    flex-wrap: wrap;
-    border: ;
-    height: 400px;
-    width: 700px;
-    margin-left: 0px;
-    margin-bottom:100px;
-    gap:0px;
-    box-shadow: 0 0 10px rgb(2, 29, 35);
-    border-radius: 20px;
 
-}
-#heading{
-    text-align: center;
-    padding: 30px;
-}
-#skillimg{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-}
-#problem{
-    height: 130px;
-    width: 180px;
-    border: 1px solid black;
-    border-radius: 20px;
-
-}
-#problem img{
-    margin-left: 37px;
-    padding: 10px;
-}
-#problem h4{
-    text-align: center;
-}
-#team{
-    height: 130px;
-    width: 180px;
-    border: 1px solid black;
-    border-radius: 20px;
-
-}
-#team img{
-    margin-left: 37px;
-    padding: 10px;
-}
-#team h4{
-    text-align: center;
-}
-#clean{
-    height: 130px;
-    width: 180px;
-    border: 1px solid black;  
-    border-radius: 20px;
-
-}
-#clean img{
-    margin-left: 37px;
-    padding: 10px;
-}
-#clean h4{
-    text-align: center;
-}
-#communication{
-    height: 130px;
-    width: 180px;
-    border: 1px solid black;
-    border-radius: 20px;
-
-}
-#communication img{
-    margin-left: 37px;
-    padding: 10px;
-}
-#communication h4{
-    text-align: center;
-}
-
-#project{
+/* ===== PROJECT SECTION (desktop) ===== */
+#project {
     min-height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-betwee;
-    align-items: ;
-    padding: 0px;
-    flex-wrap: ;
-    background-color:white;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 80px;
 }
-#project-h1{
+
+#project-h1 {
     text-align: center;
     margin-top: 70px;
+    margin-bottom: 50px;
     color: black;
 }
-#project-main{
+
+#project-main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: ;
-    margin-top: 50px;
-    gap: 100px;
-    
+    align-items: center;
+    flex-wrap: wrap;          /* wraps naturally before media query kicks in */
+    gap: 40px;
+    width: 100%;
+    padding: 0 60px;
 }
-#project-main img{
-border: 1px solid black;
-border-radius: 30px;
-box-shadow: 0 0 15px rgb(2, 29, 35);
+
+.project-card {
+    border-radius: 20px;
+    overflow: hidden;         /* clips image to rounded corners */
+    box-shadow: 0 0 15px rgb(2, 29, 35);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgb(2, 29, 35);
+}
+
+.project-card img {
+    display: block;           /* removes inline gap under image */
+    width: 420px;
+    height: 300px;
+    object-fit: cover;        /* fills card without stretching */
+    border-radius: 20px;
+}
 
 
-}
 #contact{
     min-height: 100vh;
     display:flex;
@@ -461,162 +384,181 @@ box-shadow: 0 0 15px rgb(2, 29, 35);
 
 
 
-/* =========================
-   TABLET RESPONSIVE
-========================= */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 1024px){
-
-    nav{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    #home{
-        gap: 100px;
-        padding: 50px;
-    }
-
-    #main{
-        flex-direction: column;
-        gap: 50px;
-        padding: 50px;
-    }
-
-    #skill-main{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #project-main{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about-connect{
-        margin-left: 0;
-        text-align: center;
-    }
-
-    #connect-form{
-        margin-left: 0;
-    }
-}
-
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-
-@media screen and (max-width: 768px){
-
-    nav{
+    /* NAV */
+    nav {
         flex-direction: column;
         height: auto;
+        padding: 8px 20px;
+        gap:5px;
+    }
+    #logo{
+        font-size:20px ;
+    }
+
+    #nav-link {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        gap: 4px;
+    }
+
+    #nav-link li {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    /* HOME */
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+        padding: 140px 20px 50px;
+    }
+
+    #hom1 {
+        max-width: 100%;
+    }
+
+    #img1 {
+        height: auto;
+        box-shadow: none;
+    }
+
+    #img1 img {
+        width: 220px;
+    }
+
+    #icons {
+        justify-content: center;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    /* ABOUT */
+    #main {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    #about-image img {
+        width: 220px;
+        height: auto;
+    }
+
+    #about-content {
+        max-width: 100%;
+    }
+
+    #datails {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* SKILLS */
+    #skill-main {
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
     }
 
-    #nav-link{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
-    }
-
-    #nav-link li{
-        margin: 10px 0;
-        font-size: 20px;
-    }
-
-    #home{
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 50px;
-        padding: 120px 20px 50px;
-    }
-
-    #img1 img{
-        width: 250px;
-    }
-
-    #main{
-        flex-direction: column;
-        text-align: center;
-        padding: 50px 20px;
-    }
-
-    #about-image img{
-        width: 250px;
-        height: auto;
-    }
-
-    #datails{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #skill-main{
-        flex-direction: column;
-        align-items: ;
-    }
-
     #tech,
-    #soft{
-        width: 90%;
+    #soft {
+        width: 95%;
         height: auto;
         padding-bottom: 30px;
     }
 
-    #skillimg{
-        gap: 20px;
+    #skillimg {
+        gap: 15px;
+        padding: 10px;
     }
 
-    #html,
-    #css,
-    #javascript,
-    #python,
-    #problem,
-    #team,
-    #clean,
-    #communication{
-        width: 140px;
+    #html, #css, #javascript, #python,
+    #problem, #team, #clean, #communication {
+        width: 130px;
+        height: 120px;
     }
 
-    #project-main{
+    /* PROJECTS */
+    #project-main {
         flex-direction: column;
-        gap: 40px;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
     }
 
-    #project-main img{
+    #project-main img {
         width: 90%;
         height: auto;
     }
 
-    #about-connect{
+    /* CONTACT */
+    #about-connect {
         margin-left: 0;
         text-align: center;
-        padding: 20px;
+        padding: 15px 20px;
+        font-size: 16px;
     }
 
-    #connect-form{
+    #connect-form {
         width: 90%;
         margin: 20px auto;
+        padding: 20px 15px;
     }
 
-    #connect-form input{
+    #connect-form input {
         width: 100%;
     }
 
-    #connect-form button{
+    #connect-form button {
         margin-left: 0 !important;
         width: 100%;
         height: 40px;
     }
+}
 
-    #h1{
-        font-size: 22px;
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #skill-main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 30px;
     }
 
-    #logo{
-        font-size: 24px;
+    #tech,
+    #soft {
+        width: 95%;
+    }
+
+    #tech .skillimg div,
+    #soft .skillimg div {
+        width: 130px;
+        height: 120px;
+    }
+}
+
+/* ===== PROJECT SECTION (mobile) ===== */
+@media screen and (max-width: 768px) {
+
+    #project-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .project-card {
+        width: 95%;
     }
 }
