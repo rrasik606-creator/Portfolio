@@ -201,6 +201,16 @@ box-shadow: 0 0 20px rgb(2, 29, 35);
     padding-bottom: 30px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(2, 29, 35);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#tech:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgb(2, 29, 35);
+}
+#soft:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgb(2, 29, 35);
 }
 
 /* Fix: target heading inside each card */
@@ -244,6 +254,7 @@ box-shadow: 0 0 20px rgb(2, 29, 35);
     object-fit: contain;
     margin: 0;                  /* remove the old margin-left: 37px */
     padding: 0;
+
 }
 
 #tech .skillimg div h4,
