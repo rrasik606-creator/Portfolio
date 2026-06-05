@@ -6,6 +6,19 @@
     <title>MY portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "g9ru92G1D8HGDs7jS",
+      });
+   })();
+</script>
+
 </head>
 <body>
     <section id="nav">
@@ -116,14 +129,14 @@
         </div>
         <form action="" id="connect-form">
             <label for="Name">Name</label><br>
-            <input type="text" placeholder="  Enter your name"><br><br>
+            <input type="text" placeholder="  Enter your name" id="name"><br><br>
             <label for="Email">Email</label><br>
-            <input type="email" placeholder="  Enter ypur mail"><br><br>
+            <input type="email" placeholder="  Enter ypur mail" id="mail"><br><br>
             <label for="text">Subject</label><br>
-            <input type="text" placeholder="  How can I help you?"><br><br>
+            <input type="text" placeholder="  How can I help you?" id="subject"><br><br>
             <label for="text">Message</label><br>
-            <input style="height: 100px;" type="text" placeholder="  Enter your message..."><br><br>
-            <button style="margin-left: 100px;" type="submit"><span style="color: white;"><b>Send Message</b></span></button>
+            <input style="height: 100px;" type="text" placeholder="  Enter your message..." id="message"><br><br>
+            <button style="margin-left: 100px;" type="submit" id="but" onclick="sendMail(event)"><span style="color: white;"><b>Send Message</b></span></button>
         </form>
       </div>
     </section>
