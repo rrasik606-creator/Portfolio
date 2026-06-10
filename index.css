@@ -101,12 +101,14 @@ box-shadow: 0 0 20px rgb(2, 29, 35);
 
 }
 #about-image{
-
-
-     
+    border-radius:20%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 295px;
+    height: 345px;
 }
-#about-image:hover{
-    box-shadow: none;
+#about-image:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgb(2, 29, 35);
 }
 
 
@@ -366,16 +368,25 @@ box-shadow: 0 0 20px rgb(2, 29, 35);
     text-align: ;
     line-height: 1.7;
     box-shadow: 0 0 20px rgb(2, 29, 35);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#connect-form:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgb(2, 29, 35);
 }
 #connect-form input{
     width:350px;
     height: 40px;
     border-radius: 10px;
     border: 0.1px solid rgb(0, 0, 0) ;
+    transition: transform 0.3s, box-shadow 0.3s;
     
 }
-#connect-form input:hover{
-    box-shadow: 0 0 20px rgb(2, 29, 35);
+
+#connect-form input:focus {
+    outline: none; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgb(2, 29, 35);
 }
 #connect-form button{
     background-color: white;
@@ -389,7 +400,7 @@ box-shadow: 0 0 20px rgb(2, 29, 35);
 }
 #connect-form button:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(2, 29, 35);
+    box-shadow: 0 0 10px rgb(2, 29, 35);
 }
 
 
@@ -456,8 +467,8 @@ box-shadow: 0 0 20px rgb(2, 29, 35);
     }
 
     #about-image img {
-        width: 220px;
-        height: auto;
+        width: 300px;
+        height: 350px;
     }
 
     #about-content {

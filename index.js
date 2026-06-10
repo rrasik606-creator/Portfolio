@@ -38,3 +38,9 @@ function sendMail(event) {
         })
         .catch(err => console.log(err));
 }
+
+function goToDiv() {
+  document.getElementById("contact").scrollIntoView({
+    behavior: "smooth"
+  });
+}
