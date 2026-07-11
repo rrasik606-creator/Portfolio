@@ -3,8 +3,6 @@
  * @return {number}
  */
 var countEven = function(num) {
-    let str="";
-    let split;
     let sum;
     let result=0;
     for(let i=1;i<=num;i++){
