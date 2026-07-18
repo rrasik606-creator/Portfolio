@@ -11,5 +11,5 @@ var countNegatives = function(grid) {
            }
        }
     }
-    return count
+    return count;
 };
